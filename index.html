@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			textarea{
+				resize: none;
+			}
+			ul{
+				list-style: none;
+			}
+			body{
+				background: url(img/wrapBg.jpg) no-repeat;
+			}
+			#logo{
+				margin: 30px 0 0 300px;
+			}
+			.center{
+				width: 800px;
+				height: 200px;
+				margin: 0 auto;
+				
+				border: solid 1px #666;
+			}
+			.Left{
+				width: 560px;
+				height: 200px;
+				background-color: white;
+				float: left;
+				padding: 0 20px;
+			}
+			.Right{
+				width: 200px;
+				height: 200px;
+				float: right;
+				background-color: aquamarine;
+			}
+			h2{
+				height: 30px;
+				font: 18px/30px "微软雅黑";
+			}
+			textarea{
+				width: 540px;
+				height: 60px;
+				padding: 10px;
+			}
+			#funBox a{
+				text-decoration: none;
+				color: black;
+				font-size: 15px;
+				padding: 5px 10px;
+			}
+			
+			button{
+				height: 32px;
+            	width: 115px;
+            	background: url(img/bg1.png) no-repeat -117px -165px;
+            	float: right;
+			}
+			button:hover{
+				background-position: 0 -195px;
+			}
+			#txtNum{
+				float: right;
+				font: 20px arial;
+				margin-right: 10px;
+			}
+			.faceBox{
+				width: 250px;
+				background-color: whitesmoke;
+				position: absolute;
+            	border:2px solid #ccc;
+				top: 30px;
+				left: 10px;
+				display: none;
+			}
+			#face{
+				position: relative;
+			}
+			#friends{
+				position: relative;
+			}
+			.ulStyle{
+				display: none;
+				position: absolute;
+				top: 30px;
+				left: 10px;
+			}
+			
+			.liStyle{
+				width: 50px;
+				height: 20px;
+				background-color: #eee;
+				border-bottom: solid 1px #ccc;
+			}
+			.liStyle:hover{
+				background-color: #bbb;
+			}
+		</style>
+		<script src="js/jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index2.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<img src="img/b3_100901.png" id="logo"/>
+		<div class="center">
+			<div class="Left">
+				<h2>巴啦啦能量，变身~~</h2>
+				<textarea id="msgTxt"></textarea>
+				<div id="funBox">
+					<a href="#" id="topic">话题</a>
+					<a href="#" id="friends">朋友</a>
+					<a href="#" id="face">表情</a>
+					<a href="#">照片</a>
+					<a href="#">视频</a>
+				</div>
+				<div id="sendBox">
+					<button></button>
+					<span id="txtNum">
+						还能输入<em>140</em>字
+					</span>
+				</div>
+			</div>
+			<div class="Right">
+				
+			</div>
+		</div>
+	</body>
+</html>
